@@ -1615,7 +1615,7 @@ def retorna_conteudo_arquivo(arquivo: str):
 
 if __name__ == "__main__":
     print(retorna_conteudo_arquivo("arquivo.txt"))  # [conteúdo]
-    print(retorna_conteudo_arquivo("read.md"))  # Arquivo não encontrado: [Errno 2] No such file or directory: 'read.md'
+    print(retorna_conteudo_arquivo("README.md"))  # Arquivo não encontrado: [Errno 2] No such file or directory: 'README.md'
     print(retorna_conteudo_arquivo(7))  # Erro de sistema: [WinError 6] Identificador inválido
 
 
@@ -2706,3 +2706,80 @@ if __name__ == "__main__":
     tv = TV("Show do Milhão", 12)
     tv.mudar_canal("Silvio Santos")  # Mudando de Show do Milhão para Silvio Santos
     tv.ajustar_volume(18)  # Ajustando volume de 12 para 18
+
+
+# ex145: Crie uma classe Lampada com métodos ligar() e desligar().
+class Lampada:
+    def __init__(self, ligada):
+        self.ligada = ligada
+
+    def ligar(self):
+        if self.ligada:
+            print("A lâmpada já está ligada.")
+        else:
+            print("A lâmpada ligou.")
+            self.ligada = True
+
+    def desligar(self):
+        if not self.ligada:
+            print("A lâmpada já está desligada.")
+        else:
+            print("A lâmpada desligou.")
+            self.ligada = False
+
+
+if __name__ == "__main__":
+    lampada = Lampada(True)
+    lampada.ligar()  # A lâmpada já está ligada.
+    lampada.desligar()  # A lâmpada desligou.
+    lampada.desligar()  #  A lâmpada já está desligada.
+    lampada.ligar()  # A lâmpada ligou.
+    lampada.desligar()  # A lâmpada desligou.
+
+
+# ex146: Crie uma classe Livro com atributos título e autor, e um método para exibir informações.
+class Livro:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
+
+    def exibir_informacoes(self):
+        print(f"O autor {self.autor} escreveu o livro {self.titulo}")
+
+
+if __name__ == "__main__":
+    livro = Livro("Técnicas de Invasão", "Bruno Fraga")
+    livro.exibir_informacoes()  # O autor Bruno Fraga escreveu o livro Técnicas de Invasão
+
+
+# ex147: Crie uma classe Cachorro com atributos nome e raça, e um método latir().
+class Cachorro:
+    def __init__(self, nome, raca):
+        self.nome = nome
+        self.raca = raca
+
+    def latir(self):
+        print(f"{self.nome} da raça {self.raca} latiu: au au au 🐶!")
+
+if __name__ == "__main__":
+    snoopy = Cachorro("Snoopy", "BullDog")
+    snoopy.latir()  # Snoopy da raça BullDog latiu: au au au 🐶!
+
+
+# ex148: Crie uma função que identifique as partes de um email e separe em Nome, Domínio e TLD
+def mail_parts(mail: str):
+    if mail.count("@") > 1 or mail.count(".") > 1:
+        return "E-mail inválido."
+
+    name = mail[:mail.index("@")]
+    domain = mail[mail.index("@")+1:mail.index(".")]
+    extension = mail[mail.index(".")+1:]
+
+    return f"Nome: {name} | Domínio (Email): {domain} | Extensão (TLD/GTLD/CCTLD): {extension}"
+
+if __name__ == "__main__":
+    print(mail_parts("semprotecao123@gmail.com"))  # Nome: semprotecao123 | Domínio (Email): gmail | Extensão (TLD/GTLD/CCTLD): com
+    print(mail_parts("anonymous@proton.me"))  # Nome: anonymous | Domínio (Email): proton | Extensão (TLD/GTLD/CCTLD): me
+    print(mail_parts("fbi_acc@tutamail.com"))  # Nome: fbi_acc | Domínio (Email): tutamail | Extensão (TLD/GTLD/CCTLD): com
+    print(mail_parts("none.anonymous@gmail.com"))  # E-mail inválido.
+
