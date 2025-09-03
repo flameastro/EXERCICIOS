@@ -2486,7 +2486,7 @@ if __name__ == "__main__":
 import math
 
 
-def retorna_area_circulo(raio: int) -> int:
+def retorna_area_circulo(raio: int) -> float:
     PI = math.pi
     area = PI * raio**2
 
@@ -2497,3 +2497,36 @@ if __name__ == "__main__":
     print(retorna_area_circulo(45))  # 6361.725123519331
     print(retorna_area_circulo(15))  # 706.8583470577034
     print(retorna_area_circulo(1))  # 3.141592653589793
+
+
+# ex134: Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
+
+def calcula_media1(notaA: float, notaB: float) -> float:
+    pesoA = 3.5
+    pesoB = 7.5
+
+    media = (notaA * pesoA + notaB * pesoB) / (pesoA + pesoB)
+    return f"MEDIA = {media:.5f}"
+
+
+if __name__ == "__main__":
+    print(calcula_media1(5.0, 7.1))  # MEDIA = 6.43182
+    print(calcula_media1(0.0, 7.1))  # MEDIA = 4.84091
+    print(calcula_media1(10.0, 10.0))  # MEDIA = 4.84091
+
+
+# ex135: Leia 3 valores, no caso, variáveis A, B e C, que são as três notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 2, a nota B tem peso 3 e a nota C tem peso 5. Considere que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.
+
+def calcula_media2(notaA: float, notaB: float, notaC: float) -> float:
+    pesoA = 2
+    pesoB = 3
+    pesoC = 5
+
+    media = (notaA * pesoA + notaB * pesoB + notaC * pesoC) / (pesoA + pesoB + pesoC)
+    return f"MEDIA = {media:.1f}"
+
+
+if __name__ == "__main__":
+    print(calcula_media2(5.0, 6.0, 7.0))  # MEDIA = 6.3
+    print(calcula_media2(3.7, 3.7, 9.3))  # MEDIA = 6.5
+    print(calcula_media2(1.5, 3.9, 10.0))  # MEDIA = 6.5

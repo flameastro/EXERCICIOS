@@ -2,7 +2,7 @@
 import math
 
 
-def retorna_area_circulo(raio: int) -> int:
+def retorna_area_circulo(raio: int) -> float:
     PI = math.pi
     area = PI * raio**2
 
