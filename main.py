@@ -2530,3 +2530,45 @@ if __name__ == "__main__":
     print(calcula_media2(5.0, 6.0, 7.0))  # MEDIA = 6.3
     print(calcula_media2(3.7, 3.7, 9.3))  # MEDIA = 6.5
     print(calcula_media2(1.5, 3.9, 10.0))  # MEDIA = 6.5
+
+
+# ex136: Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas por semana, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+def retorna_salario(numero: int, horas: int, valor_hora: float) -> float:
+    salario = valor_hora * horas
+
+    return (
+        f"NÚMERO = {numero}\n"
+        f"SALÁRIO = R$ {salario:.2f}"
+    )
+
+
+if __name__ == "__main__":
+    print(retorna_salario(25, 100, 5.50))  # NÚMERO = 25; SALÁRIO = R$ 550.00
+    print(retorna_salario(1, 200, 20.50))  # NÚMERO = 1; SALÁRIO = R$ 4100.00
+    print(retorna_salario(6, 145, 15.55))  # NÚMERO = 6; SALÁRIO = R$ 2254.75
+
+
+# ex137: Faça um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o total a receber no final do mês, com duas casas decimais.
+vendedor = input("Digite o nome do vendedor:\n>>> ")
+salario = float(input(f"Digite o salário fixo de {vendedor}:\n>>> "))
+vendas = float(input(f"Qual foi o total de venda que {vendedor} fez?\n>>> "))
+
+total = (vendas * 0.15) + salario
+
+print(f"TOTAL = R$ {total:.2f}")
+
+
+# ex138: Neste problema, deve-se ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Após, calcule e mostre o valor a ser pago.
+codigo1 = int(input("Digite o código da peça 1:\n>>> "))
+numero1 = int(input("Digite quantas peças são:\n>>> "))
+valor1 = float(input("Digite o valor unitário de cada peça 1:\n>>> "))
+calculo1 = numero1 * valor1
+
+codigo2 = int(input("Digite o código da peça 2:\n>>> "))
+numero2 = int(input("Digite quantas peças são:\n>>> "))
+valor2 = float(input("Digite o valor unitário de cada peça 2:\n>>> "))
+calculo2 = numero2 * valor2
+
+valor = calculo1 + calculo2
+
+print(f"VALOR A PAGAR: R$ {valor:.2f}")
