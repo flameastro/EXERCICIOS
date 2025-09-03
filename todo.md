@@ -1,7 +1,3 @@
-Crie uma classe Produto com atributos nome e preço, e um método para aplicar desconto.
-Crie uma classe Lampada com métodos ligar() e desligar().
-Crie uma classe Livro com atributos título e autor, e um método para exibir informações.
-Crie uma classe Cachorro com atributos nome e raça, e um método latir().
 Crie uma classe Gato com atributos nome e cor, e um método miar().
 Crie uma classe **Funcionario** com atributos nome, cargo e salário.
 Crie uma classe **Relogio** que mostre horas e permite nodificar o tempo
