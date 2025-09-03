@@ -462,3 +462,172 @@ Relógio digital que imprime hora atual a cada segundo (loop + time.sleep).
 Gerador de QR Code (usando biblioteca externa opcional) a partir de texto.
 Mini‑blog em console com persistência em SQLite (usando sqlite3) – criar, ler, atualizar e excluir posts.
 Essas 100 sugestões podem ser usadas como exercícios individuais ou combinadas para formar projetos mais robustos. Se quiser detalhes de implementação, exemplos de saída ou dicas de como ampliar algum exercício, é só avisar! 🚀
+
+# Novos Exercícios de Programação
+
+
+
+
+
+## Exercícios Adicionais
+
+# ex130: Crie um programa que converta uma temperatura de Celsius para Fahrenheit.
+# ex131: Desenvolva um programa que calcule a área de um triângulo, recebendo a base e a altura.
+# ex132: Escreva um programa que determine se um número é positivo, negativo ou zero.
+# ex133: Crie um programa que solicite ao usuário um número e exiba a tabuada desse número de 1 a 10.
+# ex134: Faça um programa que leia 5 números e informe qual é o maior e qual é o menor entre eles.
+# ex135: Desenvolva um programa que verifique se uma palavra é um palíndromo (lê-se igual de trás para frente).
+# ex136: Crie um programa que conte o número de vogais em uma string fornecida pelo usuário.
+# ex137: Escreva um programa que inverta uma string (ex: 'python' -> 'nohtyp').
+# ex138: Faça um programa que calcule o fatorial de um número inteiro positivo.
+# ex139: Desenvolva um programa que gere os primeiros N números da sequência de Fibonacci.
+# ex140: Crie um programa que simule um jogo de adivinhação de números, onde o computador escolhe um número e o usuário tenta adivinhar.
+# ex141: Escreva um programa que remova todos os espaços em branco de uma string.
+# ex142: Faça um programa que determine se um ano é bissexto ou não.
+# ex143: Desenvolva um programa que calcule a média de uma lista de números.
+# ex144: Crie um programa que ordene uma lista de números em ordem crescente.
+# ex145: Escreva um programa que encontre o maior elemento em uma lista.
+# ex146: Faça um programa que encontre o menor elemento em uma lista.
+# ex147: Desenvolva um programa que conte a frequência de cada caractere em uma string.
+# ex148: Crie um programa que converta um número decimal para binário.
+# ex149: Escreva um programa que converta um número binário para decimal.
+
+
+
+# ex150: Crie um programa que simule um caixa eletrônico, permitindo saques e depósitos.
+# ex151: Desenvolva um programa que calcule o Índice de Massa Corporal (IMC) de uma pessoa.
+# ex152: Escreva um programa que determine se um número é primo ou não.
+# ex153: Faça um programa que converta horas em minutos e segundos.
+# ex154: Crie um programa que calcule a potência de um número (base e expoente).
+# ex155: Desenvolva um programa que conte o número de palavras em uma frase.
+# ex156: Escreva um programa que verifique se uma string contém apenas dígitos.
+# ex157: Faça um programa que remova caracteres duplicados de uma string.
+# ex158: Crie um programa que embaralhe os caracteres de uma string.
+# ex159: Desenvolva um programa que calcule a soma dos dígitos de um número.
+# ex160: Escreva um programa que encontre o segundo maior elemento em uma lista.
+# ex161: Faça um programa que encontre o segundo menor elemento em uma lista.
+# ex162: Crie um programa que verifique se uma lista está ordenada.
+# ex163: Desenvolva um programa que remova elementos específicos de uma lista.
+# ex164: Escreva um programa que combine duas listas, removendo duplicatas.
+# ex165: Faça um programa que encontre a interseção de duas listas.
+# ex166: Crie um programa que encontre a união de duas listas.
+# ex167: Desenvolva um programa que calcule o produto de todos os números em uma lista.
+# ex168: Escreva um programa que divida uma lista em duas metades.
+# ex169: Faça um programa que encontre o elemento mais frequente em uma lista.
+
+
+
+# ex170: Crie um programa que converta um número para sua representação em palavras (ex: 123 -> cento e vinte e três).
+# ex171: Desenvolva um programa que simule um jogo da forca.
+# ex172: Escreva um programa que calcule a diferença entre duas datas.
+# ex173: Faça um programa que verifique se uma string é um anagrama de outra.
+# ex174: Crie um programa que encontre todos os números primos em um determinado intervalo.
+# ex175: Desenvolva um programa que calcule o MDC (Máximo Divisor Comum) de dois números.
+# ex176: Escreva um programa que calcule o MMC (Mínimo Múltiplo Comum) de dois números.
+# ex177: Faça um programa que converta um número romano para inteiro.
+# ex178: Crie um programa que converta um número inteiro para romano.
+# ex179: Desenvolva um programa que simule uma calculadora simples (adição, subtração, multiplicação, divisão).
+# ex180: Escreva um programa que encontre o número de ocorrências de uma substring em uma string.
+# ex181: Faça um programa que verifique se uma URL é válida.
+# ex182: Crie um programa que extraia todos os endereços de e-mail de um texto.
+# ex183: Desenvolva um programa que valide um CPF.
+# ex184: Escreva um programa que simule um cronômetro.
+# ex185: Faça um programa que gere senhas aleatórias com critérios específicos (tamanho, caracteres especiais, etc.).
+# ex186: Crie um programa que calcule a idade de uma pessoa em anos, meses e dias.
+# ex187: Desenvolva um programa que simule um jogo de dados (lançar dados e mostrar resultado).
+# ex188: Escreva um programa que encontre o elemento que aparece um número ímpar de vezes em uma lista.
+# ex189: Faça um programa que calcule a soma dos números pares em um intervalo.
+
+
+
+# ex190: Crie um programa que calcule a soma dos números ímpares em um intervalo.
+# ex191: Desenvolva um programa que encontre o maior divisor comum de dois números.
+# ex192: Escreva um programa que encontre o menor múltiplo comum de dois números.
+# ex193: Faça um programa que converta um número para sua representação binária.
+# ex194: Crie um programa que converta um número binário para decimal.
+# ex195: Desenvolva um programa que simule um jogo da velha.
+# ex196: Escreva um programa que calcule a área e o perímetro de um círculo.
+# ex197: Faça um programa que calcule a área e o perímetro de um retângulo.
+# ex198: Crie um programa que calcule a área e o perímetro de um quadrado.
+# ex199: Desenvolva um programa que calcule a área e o perímetro de um triângulo.
+# ex200: Escreva um programa que converta uma string para maiúsculas.
+# ex201: Faça um programa que converta uma string para minúsculas.
+# ex202: Crie um programa que capitalize a primeira letra de cada palavra em uma string.
+# ex203: Desenvolva um programa que remova espaços em branco extras de uma string.
+# ex204: Escreva um programa que verifique se uma string é um número.
+# ex205: Faça um programa que inverta a ordem das palavras em uma frase.
+# ex206: Crie um programa que conte o número de palavras únicas em uma frase.
+# ex207: Desenvolva um programa que encontre a palavra mais longa em uma frase.
+# ex208: Escreva um programa que encontre a palavra mais curta em uma frase.
+# ex209: Faça um programa que verifique se uma string é um pangrama (contém todas as letras do alfabeto).
+
+
+
+# ex210: Crie um programa que simule um jogo de batalha naval.
+# ex211: Desenvolva um programa que calcule a distância entre dois pontos no plano cartesiano.
+# ex212: Escreva um programa que converta um número decimal para hexadecimal.
+# ex213: Faça um programa que converta um número hexadecimal para decimal.
+# ex214: Crie um programa que calcule a média ponderada de notas.
+# ex215: Desenvolva um programa que simule um sistema de gerenciamento de estoque.
+# ex216: Escreva um programa que encontre o maior e o menor elemento em uma matriz.
+# ex217: Faça um programa que multiplique duas matrizes.
+# ex218: Crie um programa que calcule a transposta de uma matriz.
+# ex219: Desenvolva um programa que resolva um sistema de equações lineares (2x2).
+# ex220: Escreva um programa que simule um jogo de xadrez (movimento de peças).
+# ex221: Faça um programa que encontre o caminho mais curto em um grafo (algoritmo de Dijkstra).
+# ex222: Crie um programa que simule uma fila de banco.
+# ex223: Desenvolva um programa que simule uma pilha de livros.
+# ex224: Escreva um programa que implemente uma lista encadeada.
+# ex225: Faça um programa que implemente uma árvore binária de busca.
+# ex226: Crie um programa que simule um elevador.
+# ex227: Desenvolva um programa que calcule o valor presente líquido (VPL) de um investimento.
+# ex228: Escreva um programa que calcule a taxa interna de retorno (TIR) de um investimento.
+# ex229: Faça um programa que simule um sistema de recomendação de filmes.
+
+
+
+# ex230: Crie um programa que simule um sistema de reservas de passagens aéreas.
+# ex231: Desenvolva um programa que simule um sistema de gerenciamento de biblioteca.
+# ex232: Escreva um programa que simule um sistema de gerenciamento de contatos.
+# ex233: Faça um programa que simule um sistema de gerenciamento de tarefas.
+# ex234: Crie um programa que simule um sistema de gerenciamento de projetos.
+# ex235: Desenvolva um programa que simule um sistema de gerenciamento de funcionários.
+# ex236: Escreva um programa que simule um sistema de gerenciamento de clientes.
+# ex237: Faça um programa que simule um sistema de gerenciamento de produtos.
+# ex238: Crie um programa que simule um sistema de gerenciamento de vendas.
+# ex239: Desenvolva um programa que simule um sistema de gerenciamento de compras.
+# ex240: Escreva um programa que simule um sistema de gerenciamento de pedidos.
+# ex241: Faça um programa que simule um sistema de gerenciamento de estoque de livros.
+# ex242: Crie um programa que simule um sistema de gerenciamento de estoque de filmes.
+# ex243: Desenvolva um programa que simule um sistema de gerenciamento de estoque de músicas.
+# ex244: Escreva um programa que simule um sistema de gerenciamento de estoque de jogos.
+# ex245: Faça um programa que simule um sistema de gerenciamento de estoque de roupas.
+# ex246: Crie um programa que simule um sistema de gerenciamento de estoque de alimentos.
+# ex247: Desenvolva um programa que simule um sistema de gerenciamento de estoque de bebidas.
+# ex248: Escreva um programa que simule um sistema de gerenciamento de estoque de eletrônicos.
+# ex249: Faça um programa que simule um sistema de gerenciamento de estoque de veículos.
+
+
+
+# ex250: Crie um programa que simule um sistema de gerenciamento de estoque de imóveis.
+# ex251: Desenvolva um programa que simule um sistema de gerenciamento de estoque de ferramentas.
+# ex252: Escreva um programa que simule um sistema de gerenciamento de estoque de materiais de construção.
+# ex253: Faça um programa que simule um sistema de gerenciamento de estoque de produtos de limpeza.
+# ex254: Crie um programa que simule um sistema de gerenciamento de estoque de produtos de beleza.
+# ex255: Desenvolva um programa que simule um sistema de gerenciamento de estoque de produtos de higiene pessoal.
+# ex256: Escreva um programa que simule um sistema de gerenciamento de estoque de produtos de jardinagem.
+# ex257: Faça um programa que simule um sistema de gerenciamento de estoque de produtos de pet shop.
+# ex258: Crie um programa que simule um sistema de gerenciamento de estoque de produtos de papelaria.
+# ex259: Desenvolva um programa que simule um sistema de gerenciamento de estoque de produtos de informática.
+# ex260: Escreva um programa que simule um sistema de gerenciamento de estoque de produtos de escritório.
+# ex261: Faça um programa que simule um sistema de gerenciamento de estoque de produtos de cozinha.
+# ex262: Crie um programa que simule um sistema de gerenciamento de estoque de produtos de banheiro.
+# ex263: Desenvolva um programa que simule um sistema de gerenciamento de estoque de produtos de quarto.
+# ex264: Escreva um programa que simule um sistema de gerenciamento de estoque de produtos de sala.
+# ex265: Faça um programa que simule um sistema de gerenciamento de estoque de produtos de decoração.
+# ex266: Crie um programa que simule um sistema de gerenciamento de estoque de produtos de iluminação.
+# ex267: Desenvolva um programa que simule um sistema de gerenciamento de estoque de produtos de segurança.
+# ex268: Escreva um programa que simule um sistema de gerenciamento de estoque de produtos de esporte e lazer.
+# ex269: Faça um programa que simule um sistema de gerenciamento de estoque de produtos de viagem.
+
+
