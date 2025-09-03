@@ -1,8 +1,3 @@
-Crie uma classe Carro com atributos marca e ano, e um método para exibir informações.
-Crie uma classe Pessoa com atributos nome e idade, e um método para dizer a idade.
-Crie uma classe ContaBancaria com atributos titular e saldo, e métodos sacar e depositar.
-Crie uma classe Aluno com atributos nome e notas, e um método para calcular a média.
-Crie uma classe TV com atributos canal e volume, e métodos mudar_canal() e ajustar_volume().
 Crie uma classe Produto com atributos nome e preço, e um método para aplicar desconto.
 Crie uma classe Lampada com métodos ligar() e desligar().
 Crie uma classe Livro com atributos título e autor, e um método para exibir informações.
