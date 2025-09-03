@@ -2572,3 +2572,137 @@ calculo2 = numero2 * valor2
 valor = calculo1 + calculo2
 
 print(f"VALOR A PAGAR: R$ {valor:.2f}")
+
+
+# ex139: Leia os quatro valores correspondentes aos eixos x e y de dois pontos quaisquer no plano, p1(x1,y1) e p2(x2,y2) e calcule a distância entre eles, mostrando 4 casas decimais, segundo a fórmula: distância = sqrt((x2 - x1)^2 + (y2 - y1)^2). O arquivo de entrada contém duas linhas de dados. A primeira linha contém dois valores de ponto flutuante: x1 y1 e a segunda linha contém dois valores de ponto flutuante x2 y2. Calcule e imprima o valor da distância segundo a fórmula fornecida, considerando 4 casas decimais.
+from math import sqrt
+
+x1 = float(input("Valor do x1:\n>>> "))
+y1 = float(input("Valor do y1:\n>>> "))
+
+x2 = float(input("Valor do x2:\n>>> "))
+y2 = float(input("Valor do y2:\n>>> "))
+
+distancia = sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print(f"{distancia:.4f}")
+
+
+# ex140: Crie uma classe Carro com atributos marca e ano, e um método para exibir informações.
+class Carro:
+    def __init__(self, marca, ano):
+        self.marca = marca
+        self.ano = ano
+
+    def exibir_informacoes(self):
+        return f"O carro é da marca {self.marca} do ano {self.ano}"
+
+
+if __name__ == "__main__":
+    carro1 = Carro("Fiat", 2006)
+    print(carro1.exibir_informacoes())  # O carro é da marca Fiat do ano 2006
+
+    carro2 = Carro("Civic", 2015)
+    print(carro2.exibir_informacoes())  # O carro é da marca Civic do ano 2015
+
+    carro3 = Carro("Ferrari", 2021)
+    print(carro3.exibir_informacoes())  # O carro é da marca Ferrari do ano 2021
+
+
+# ex141: Crie uma classe Pessoa com atributos nome e idade, e um método para dizer a idade.
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def exibir_idade(self):
+        return f"{self.nome} tem {self.idade} anos."
+
+
+if __name__ == "__main__":
+    pessoa1 = Pessoa("Lucas", 45)
+    print(pessoa1.exibir_idade())  # Lucas tem 45 anos.
+
+    pessoa2 = Pessoa("Maria", 21)
+    print(pessoa2.exibir_idade())  # Maria tem 21 anos.
+
+    pessoa3 = Pessoa("Felipe", 15)
+    print(pessoa3.exibir_idade())  # Felipe tem 15 anos.
+
+
+# ex142: Crie uma classe ContaBancaria com atributos titular e saldo, e métodos sacar e depositar.
+class ContaBancaria:
+    def __init__(self, titular, saldo):
+        self.titular = titular
+        self.saldo = saldo
+
+    def sacar(self, valor):
+        if valor > self.saldo:
+            print("O valor do saque é maior que o valor do saldo, não foi possível fazer o saque.")
+            return 0
+
+        if valor <= 0:
+            print("O valor do saque não pode ser negativo nem nulo.")
+            return 0
+
+        self.saldo -= valor
+        print("Saque realizado com sucesso.")
+
+    def depositar(self, valor):
+        if valor <= 0:
+            print("O valor do depósito não pode ser negativo nem nulo.")
+            return 0
+
+        self.saldo += valor
+        print("Depósito realizado com sucesso.")
+
+    def exibir_saldo(self):
+        print(f"O valor do seu saldo é de R${self.saldo}")
+
+
+if __name__ == "__main__":
+    conta1 = ContaBancaria("João", 34500)
+    conta1.sacar(560)
+    conta1.exibir_saldo()
+
+
+# ex143: Crie uma classe Aluno com atributos nome e notas, e um método para calcular a média.
+class Aluno:
+    def __init__(self, nome: str, notas: list):
+        self.nome = nome
+        self.notas = notas
+
+    def calcular_media(self):
+        media = sum(self.notas) / len(self.notas)
+
+        print(f"{media:.2f}")
+
+
+if __name__ == "__main__":
+    aluno1 = Aluno("Pedro", [7.2, 9.5, 2.3])
+    aluno1.calcular_media()  # 6.33
+
+    aluno2 = Aluno("Maria", [4.6, 9.3, 4.7])
+    aluno2.calcular_media()  # 6.20
+
+    aluno3 = Aluno("Mateus", [7,.3, 9.0, 4.1])
+    aluno3.calcular_media()  # 5.10
+
+
+# ex144: Crie uma classe TV com atributos canal e volume, e métodos mudar_canal() e ajustar_volume().
+class TV:
+    def __init__(self, canal, volume):
+        self.canal = canal
+        self.volume = volume
+
+    def mudar_canal(self, novo_canal):
+        print(f"Mudando de {self.canal} para {novo_canal}")
+
+    def ajustar_volume(self, novo_volume):
+        print(f"Ajustando volume de {self.volume} para {novo_volume}")
+
+
+if __name__ == "__main__":
+    tv = TV("Show do Milhão", 12)
+    tv.mudar_canal("Silvio Santos")  # Mudando de Show do Milhão para Silvio Santos
+    tv.ajustar_volume(18)  # Ajustando volume de 12 para 18
