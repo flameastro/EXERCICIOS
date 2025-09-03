@@ -20,5 +20,5 @@ def retorna_conteudo_arquivo(arquivo: str):
 
 if __name__ == "__main__":
     print(retorna_conteudo_arquivo("arquivo.txt"))  # [conteúdo]
-    print(retorna_conteudo_arquivo("read.md"))  # Arquivo não encontrado: [Errno 2] No such file or directory: 'read.md'
+    print(retorna_conteudo_arquivo("README.md"))  # Arquivo não encontrado: [Errno 2] No such file or directory: 'README.md'
     print(retorna_conteudo_arquivo(7))  # Erro de sistema: [WinError 6] Identificador inválido
