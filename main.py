@@ -2434,3 +2434,61 @@ print(compactador_RLE("compactadorRLE"))  # c2o2m1p1a2t1d1r1R1L1E1
 print(compactador_RLE("Pyyyyyyyyyyyyython"))  # Resultado do RLE: P1y13t1h1o1n1
 print(compactador_RLE("aaaaaaa"))  # Resultado do RLE: a7
 
+
+# ex130: Crie uma função com Celsius como parâmetro e retorne a temperatura equivalente a Fahrenheit.
+def converte_temperatura(Celsius: int) -> int:
+    fahrenheit = (Celsius * 9/5) + 32
+
+    return fahrenheit
+
+
+if __name__ == "__main__":
+    print(converte_temperatura(32))  # 89.6
+    print(converte_temperatura(45))  # 113.0
+    print(converte_temperatura(12))  # 53.6
+    print(converte_temperatura(4.5))  # 40.1
+    print(converte_temperatura(1))  # 33.8
+
+
+# Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
+def quilometros_para_milhas(quilometros: int) -> int:
+    milhas = quilometros * 0.621371
+
+    return milhas
+
+
+if __name__ == "__main__":
+    print(quilometros_para_milhas(5))  # 3.106855
+    print(quilometros_para_milhas(504))  # 313.170984
+    print(quilometros_para_milhas(1))  # 0.621371
+
+
+# Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
+def quilometros_para_milhas(quilometros: int) -> int:
+    milhas = quilometros * 0.621371
+
+    return milhas
+
+
+if __name__ == "__main__":
+    print(quilometros_para_milhas(5))  # 3.106855
+    print(quilometros_para_milhas(504))  # 313.170984
+    print(quilometros_para_milhas(1))  # 0.621371
+
+# Crie uma função que receba uma string como parâmetro e retorna seu acrônimo (Python Vs JavaScript -> PVJ)
+def retorna_acronimo(string: str):
+    string = string.split()
+
+    acronimo = ""
+
+    for palavra in string:
+        letra = palavra[0]
+        acronimo += letra.upper()
+
+    return acronimo
+
+
+if __name__ == "__main__":
+    print(retorna_acronimo("Python Vs JavaScript"))  # PVJ
+    print(retorna_acronimo("Albert Einstein e Oppenheimer"))  # AEEO
+    print(retorna_acronimo())
