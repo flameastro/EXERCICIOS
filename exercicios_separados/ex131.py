@@ -1,5 +1,5 @@
-# Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
-def quilometros_para_milhas(quilometros: int) -> int:
+# ex131: Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
+def quilometros_para_milhas(quilometros: int) -> float:
     milhas = quilometros * 0.621371
 
     return milhas

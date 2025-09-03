@@ -1,4 +1,4 @@
-# Crie uma função que receba uma string como parâmetro e retorna seu acrônimo (Python Vs JavaScript -> PVJ)
+# ex132: Crie uma função que receba uma string como parâmetro e retorna seu acrônimo (Python Vs JavaScript -> PVJ)
 def retorna_acronimo(string: str):
     string = string.split()
 

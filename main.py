@@ -2450,8 +2450,8 @@ if __name__ == "__main__":
     print(converte_temperatura(1))  # 33.8
 
 
-# Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
-def quilometros_para_milhas(quilometros: int) -> int:
+# ex131: Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
+def quilometros_para_milhas(quilometros: int) -> float:
     milhas = quilometros * 0.621371
 
     return milhas
@@ -2463,19 +2463,7 @@ if __name__ == "__main__":
     print(quilometros_para_milhas(1))  # 0.621371
 
 
-# Crie uma função que converta quilômetros para milhas (1 km  ≈  0,621371mi).
-def quilometros_para_milhas(quilometros: int) -> int:
-    milhas = quilometros * 0.621371
-
-    return milhas
-
-
-if __name__ == "__main__":
-    print(quilometros_para_milhas(5))  # 3.106855
-    print(quilometros_para_milhas(504))  # 313.170984
-    print(quilometros_para_milhas(1))  # 0.621371
-
-# Crie uma função que receba uma string como parâmetro e retorna seu acrônimo (Python Vs JavaScript -> PVJ)
+# ex132: Crie uma função que receba uma string como parâmetro e retorna seu acrônimo (Python Vs JavaScript -> PVJ)
 def retorna_acronimo(string: str):
     string = string.split()
 
@@ -2492,3 +2480,20 @@ if __name__ == "__main__":
     print(retorna_acronimo("Python Vs JavaScript"))  # PVJ
     print(retorna_acronimo("Albert Einstein e Oppenheimer"))  # AEEO
     print(retorna_acronimo())
+
+
+# ex133: Crie uma função que tenha raio como parâmetro e retorne a área de um círculo. Sabendo que a fórmula é: π x raio^2
+import math
+
+
+def retorna_area_circulo(raio: int) -> int:
+    PI = math.pi
+    area = PI * raio**2
+
+    return area
+
+if __name__ == "__main__":
+    print(retorna_area_circulo(2))  # 12.566370614359172
+    print(retorna_area_circulo(45))  # 6361.725123519331
+    print(retorna_area_circulo(15))  # 706.8583470577034
+    print(retorna_area_circulo(1))  # 3.141592653589793
