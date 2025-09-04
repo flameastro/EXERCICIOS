@@ -1,4 +1,4 @@
-Crie uma classe Gato com atributos nome e cor, e um método miar().
+Crie uma classe Gato com atributos nome e cor e um método miar().
 Crie uma classe **Funcionario** com atributos nome, cargo e salário.
 Crie uma classe **Relogio** que mostre horas e permite nodificar o tempo
 Crie uma classe **Pessoa** com método aniversario() que aumenta a idade.
