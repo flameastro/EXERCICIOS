@@ -1,4 +1,5 @@
 # Sites gratuitos para exercícios Python
+- https://judge.beecrowd.com/pt
 - https://www.codewars.com/dashboard
 - https://leetcode.com/
 - https://roadmap.sh/
