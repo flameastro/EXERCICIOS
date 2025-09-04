@@ -2985,3 +2985,38 @@ if __name__ == "__main__":
     contar_ovelhas(3)  # 1 ovelha(s)... 2 ovelha(s)... 3 ovelha(s)... 
     contar_ovelhas(1)  # O número deve ser maior que 1.
     contar_ovelhas(12)  # 1 ovelha(s)... 2 ovelha(s)... 3 ovelha(s)... 4 ovelha(s)... 5 ovelha(s)... 6 ovelha(s)... 7 ovelha(s)... 8 ovelha(s)... 9 ovelha(s)... 10 ovelha(s)... 11 ovelha(s)... 12 ovelha(s)...
+
+
+# ex157: Crie uma classe Funcionario com atributos nome, cargo e salário, salario, com método de trabalhar()
+class Funcionario:
+    def __init__(self, nome, cargo, salario, saldo):
+        self.nome = nome
+        self.cargo = cargo
+        self.salario = salario
+        self.saldo = saldo
+
+    def trabalhar(self, horas):
+        bonus = 15 * horas
+        self.saldo += bonus
+        print(f"Trabalhando...")
+        print(f"Olha, você ganhou +R${bonus} de saldo!")
+
+
+if __name__ == "__main__":
+    funcionario1 = Funcionario("João", "Desenvolvedor de Sistemas", 1350, 2750)
+    funcionario1.trabalhar(1)
+
+
+# ex158: Crie uma classe Gato com atributos nome e cor, e um método miar().
+class Gato:
+    def __init__(self, nome, cor):
+        self.nome = nome
+        self.cor = cor
+
+    def miar(self):
+        print(f"{self.nome} miou: miauuuu 🐱!")
+
+
+if __name__ == "__main__":
+    patrick = Gato("Patrick", "Cinza Claro")
+    patrick.miar()
