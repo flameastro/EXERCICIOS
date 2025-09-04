@@ -3097,3 +3097,95 @@ if __name__ == "__main__":
     muscle_grow.abrir()
     muscle_grow.usar_academia("Supino")
     muscle_grow.fechar()
+
+
+# ex161: Classe Agenda: parâmetros -> dono; Funções -> adicionar_compromisso(), listar_crompromissos()
+class Agenda:
+    def __init__(self, dono):
+        self.dono = dono
+        self.compromissos = []
+
+    def adicionar_compromisso(self, compromisso, data):
+        self.compromissos.append([compromisso, data])
+        print("Compromisso adicionado com sucesso")
+
+    def listar_compromissos(self):
+        for lista_compromisso in self.compromissos:
+            print(", ".join(lista_compromisso))
+
+
+if __name__ == "__main__":
+    agenda = Agenda("Gabriel")
+    agenda.adicionar_compromisso("Ir à NASA", "14:30")
+    agenda.listar_compromissos()
+
+
+# ex162: Classe Astronauta: nome, missao, experiencia, com métodos de apresentar(), explorar() e descansar()
+class Astronauta:
+    def __init__(self, nome, missao, experiencia):
+        self.nome = nome
+        self.missao = missao
+        self.experiencia = experiencia
+
+    def apresentar(self):
+        print(f"Conheça {self.nome}! Está/Já esteve presente na missão {self.missao} e tem {self.experiencia} anos de experiência.")
+
+    def explorar(self):
+        print(f"{self.nome} está explorando a missão {self.missao}.")
+
+    def descansar(self):
+        print(f"{self.nome} está cansado de explorar, foi descansar.")
+
+if __name__ == "__main__":
+    neil_armstrong = Astronauta("Neil Armstrong", "Apollo 11", 27)
+    neil_armstrong.apresentar()
+    neil_armstrong.explorar()
+    neil_armstrong.descansar()
+
+
+# ex163: Classe Calculadora básica que realiza as 4 operações básicas
+class Calculadora:
+    def __init__(self):
+        pass
+
+    def adicao(self, a, b):
+        print(a + b)f
+
+    def subtracao(self, a, b):
+        print(a - b)
+
+    def multiplicacao(self, a, b):
+        print(a * b)
+
+    def divisao(self, a, b):
+        print(a / b)
+
+
+if __name__ == "__main__":
+    calculadora = Calculadora()
+    calculadora.adicao(12, 6)  # 18
+    calculadora.multiplicacao(70, 4)  # 280
+    calculadora.divisao(48, 4)  # 12.0
+    calculadora.subtracao(900, 1800)  # -900
+
+
+# ex164: Classe Chat com parâmetros -> remetente, destinatario; métodos -> enviar_mensagem()
+class Chat:
+    def __init__(self, remetente, destinatario):
+        self.remetente = remetente
+        self.destinatario = destinatario
+
+    def enviar_mensagem(self, mensagem):
+        print(f"{self.remetente}: {mensagem}")
+
+
+if __name__ == "__main__":
+    mateus = Chat("Mateus", "Felipe")
+    felipe = Chat("Felipe", "Mateus")
+
+    mateus.enviar_mensagem("Oi, Felipe!")
+    felipe.enviar_mensagem("Oi, Mateus! Que tal jogar bola?")
+    felipe.enviar_mensagem("Mas precisa ser rápido, tenho que voltar logo.")
+    mateus.enviar_mensagem("Eu topo, Felipe!")
+    felipe.enviar_mensagem("Ok, vamos no parque, te encontro lá!")
+    mateus.enviar_mensagem("Tô indo.")
