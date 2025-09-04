@@ -2892,3 +2892,96 @@ try:
 
 except Exception as e:
     print(f"Erro: {e}")
+
+
+# ex152: Encontre a próxima raíz quadrada perfeita de um número, retorne -1 caso o número dado não seja uma raíz quadrada perfeita
+import math
+
+def retorna_proxima_raiz(numero: int) -> int:
+    raiz_quadrada = math.sqrt(numero) + 1
+    if not raiz_quadrada.is_integer():
+        return -1
+
+    proxima_raiz = int(raiz_quadrada**2)
+
+    return proxima_raiz
+
+
+if __name__ == "__main__":
+    print(retorna_proxima_raiz(144))  # 169
+    print(retorna_proxima_raiz(34))  # -1
+    print(retorna_proxima_raiz(61858225))  # 61873956
+
+
+# ex153: Crie uma função que receba dois números e uma string, indicando a operação a ser feita entre estes dois números. As opções de operações são: "add", "subtract", "divide", "multiply".
+def calculadora_aritmetica(a: float, b: float, operacao: str):
+    if operacao not in ["add", "subtract", "divide", "multiply"]:
+        return "Operação inválida."
+
+    if operacao == "add":
+        return a + b
+    elif operacao == "subtract":
+        return a - b
+    elif operacao == "divide":
+        return a / b
+
+    return a * b
+
+
+if __name__ == "__main__":
+    print(calculadora_aritmetica(4, 9, "add"))  # 13
+    print(calculadora_aritmetica(45, 8, "multiply"))  # 360
+    print(calculadora_aritmetica(1, 1.2, "divide"))  # 0.8333333333333334
+    print(calculadora_aritmetica(60, 50, "subtract"))  # 10
+    print(calculadora_aritmetica(0, 0, "disconhecido"))  # Operação inválida.
+
+
+# ex154: Crie uma função que receba uma lista e retorne a soma de todos os valores positivos.
+def soma_positivos(lista: list) -> int:
+    soma = 0
+
+    for valor in lista:
+        if valor > 0:
+            soma += valor
+
+    return soma
+
+
+if __name__ == "__main__":
+    print(soma_positivos([12, -5, 12, -3, 0, -9]))  # 24
+    print(soma_positivos([40, 10, -50, 0, 90]))  # 140
+    print(soma_positivos([-5, -3, -15, -999]))  # 0
+
+
+# ex155: Crie uma função que receba uma lista de números como parâmetro e retorne cada valor com a sua operação trocada (positivos viram negativos e vice-versa).
+def inverte_operacoes(lista: list):
+    lista_operacoes_inversa = []
+
+    for valor in lista:
+        if valor > 0:
+            lista_operacoes_inversa.append(-valor)
+        else:
+            lista_operacoes_inversa.append(abs(valor))
+
+    return lista_operacoes_inversa
+
+if __name__ == "__main__":
+    print(inverte_operacoes([12, -3, 50, -15]))  # [-12, 3, -50, 15]
+    print(inverte_operacoes([0, 12, -7, 999, 4]))  # [0, -12, 7, -999, -4]
+    print(inverte_operacoes([56, 12, 3, -9, 15]))  # [-56, -12, -3, 9, -15]
+
+
+# ex156: Conte as ovelhas! Crie uma função que receba um número inteiro maior que 1 como parâmetro e retorne {numero} ovelha... de 1 até o número.
+def contar_ovelhas(ovelhas: int) -> str:
+    if ovelhas <= 1:
+        print("O número deve ser maior que 1.")
+        return False
+
+    for ovelha in range(1, ovelhas+1):
+        print(f"{ovelha} ovelha(s)... ", end="")
+
+
+if __name__ == "__main__":
+    contar_ovelhas(3)  # 1 ovelha(s)... 2 ovelha(s)... 3 ovelha(s)... 
+    contar_ovelhas(1)  # O número deve ser maior que 1.
+    contar_ovelhas(12)  # 1 ovelha(s)... 2 ovelha(s)... 3 ovelha(s)... 4 ovelha(s)... 5 ovelha(s)... 6 ovelha(s)... 7 ovelha(s)... 8 ovelha(s)... 9 ovelha(s)... 10 ovelha(s)... 11 ovelha(s)... 12 ovelha(s)...
