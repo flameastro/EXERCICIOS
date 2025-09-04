@@ -1,29 +1,3 @@
-Crie uma classe Gato com atributos nome e cor e um método miar().
-Crie uma classe **Funcionario** com atributos nome, cargo e salário.
-Crie uma classe **Relogio** que mostre horas e permite nodificar o tempo
-Crie uma classe **Pessoa** com método aniversario() que aumenta a idade.
-Crie uma classe Bicicleta com atributos marca e velocidade, e métodos pedalar() e frear().
-Crie uma classe Cidade com atributos nome e populacao, e método crescer_populacao(n) que aumenta a população
-Gerar lista de tuplas (i, i², i³) para i = 1…N.
-Conversor de unidades (peso, comprimento, volume)
-Desenvolva um programa que calcule a área de um triângulo, recebendo a base e a altura.
-Crie um programa que simule um caixa eletrônico, permitindo saques e depósitos.
-
-
-
-<!-- Classes/POO -->
-1. Classe Academia: parâmetros -> nome, endereco, equipamentos; Funções -> abrir, fechar
-2. Classe Academico: parâmetros -> nome, curso; Funções -> pesquisar, apresentar_trabalho
-3. Classe Acessorio: parâmetros -> tipo, material, preco; Funções -> usar
-4. Classe Acao: parâmetros -> simbolo, preco_atual, volume; Funções -> comprar, vender
-5. Classe Adestrador: parâmetros -> nome, especialidade; Funções -> adestrar_animal
-6. Classe Advogado: parâmetros -> nome, especialidade, salario; Funções -> consultar, redigir_contrato
-7. Classe Aeroporto: parâmetros -> nome, cidade, voos; Funções -> decolar_voo, receber_voo
-8. Classe Aeroporto: parâmetros -> nome, localização; funções -> decolar e pousar
-9. Classe Agencia: parâmetros -> numero, contas; Funções -> abrir_conta, fechar_conta
-10. Classe AgenciaBancaria: parâmetros -> nome, numero; Funções -> abrir_conta, fechar_conta
-11. Classe AgenciaDeIntercambio: parâmetros -> nome, destinos; Funções -> oferecer_intercambio
-12. Classe AgenciaViagens: parâmetros -> nome, destinos; Funções -> vender_pacote, mostrar_destinos
 13. Classe Agenda: parâmetros -> compromissos; Funções -> adicionar, listar
 14. Classe Agenda: parâmetros -> dias, compromissos; funções -> adicionar_compromisso, remover_compromisso
 15. Classe Agenda: parâmetros -> dono, compromissos; funções -> adicionar e listar
@@ -324,3 +298,5 @@ https://www.codewars.com/kata/5861d28f124b35723e00005e
 https://www.codewars.com/kata/551b4501ac0447318f0009cd
 https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
 https://www.codewars.com/kata/576bb71bbbcf0951d5000044
+
+# Crie uma ferramenta que busca um usuário em múltiplas redes sociais pelo nome de usuário.
