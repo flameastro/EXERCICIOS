@@ -3273,3 +3273,53 @@ if __name__ == "__main__":
     print(fatorial(7))  # 5040
     print(fatorial(1))  # O número deve ser maior que 1.
 
+
+# ex170: Crie uma função que recebe uma string com uma ou mais palavras como parâmetro e retorne a mesma string, mas caso a palavra tiver 5 ou mais caracteres, retorne a palavra ao contrário. Por exemplo: VSCode é um belo editor -> edoCSV é um belo rotide.
+def inverte_parcialmente(string: str):
+    resultado = []
+
+    for palavra in string.split():
+        if len(palavra) >= 5:
+            resultado.append(palavra[::-1])
+        else:
+            resultado.append(palavra)
+
+    return " ".join(resultado)
+
+
+if __name__ == "__main__":
+    print(inverte_parcialmente("VSCode é um belo editor"))  # edoCSV é um belo rotide
+    print(inverte_parcialmente("A mente é um lugar curioso."))  # A etnem é um ragul .osoiruc
+    print(inverte_parcialmente("Você voltaria para o passado ou avançaria para o futuro?"))  # Você airatlov para o odassap ou airaçnava para o ?orutuf
+
+
+# ex171: Crie uma função que receba um número e diga se aquele número tem números adjacentes. Ou seja, números que são iguais e estão um ao lado do outro. Exemplo: 2435543 -> é um número adjacente pois o primeiro 5 está ao lado do segundo 5.
+def numero_adjacente(numero: int) -> bool:
+    if not numero.is_integer() or isinstance(numero, (bool, float, str, list, tuple, dict, set)):
+        return "Resposta incorreta, deve ser um número inteiro."
+
+    # Jeito mais fácil (não envolve quase nenhum esforço de raciocínio)
+    # numero = str(numero)
+
+    # for i in range(99, -1, -11):
+    #     if str(i) in numero:
+    #         return True
+
+    # return False
+
+    numero = str(numero)
+
+    for index, _ in enumerate(numero):
+        if not index+1 >= len(numero) and numero[index] == numero[index+1]:
+            return True
+
+    return False
+
+
+if __name__ == "__main__":
+    print(numero_adjacente(23456403894799))  # True
+    print(numero_adjacente(74346236723500438))  # True
+    print(numero_adjacente(549224.32))  # Resposta incorreta, deve ser um número inteiro.
+    print(numero_adjacente(True))  # Resposta incorreta, deve ser um número inteiro.
+    print(numero_adjacente(843653468))  # False
+    print(numero_adjacente(4))  # False
