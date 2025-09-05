@@ -3149,7 +3149,7 @@ class Calculadora:
         pass
 
     def adicao(self, a, b):
-        print(a + b)f
+        print(a + b)
 
     def subtracao(self, a, b):
         print(a - b)
@@ -3189,3 +3189,87 @@ if __name__ == "__main__":
     mateus.enviar_mensagem("Eu topo, Felipe!")
     felipe.enviar_mensagem("Ok, vamos no parque, te encontro lá!")
     mateus.enviar_mensagem("Tô indo.")
+
+
+# ex165: Nathan ama ciclismo. Porque Nathan sabe que é importante se manter hidratado. Ele toma 0.5 litros de água para cada hora de ciclismo. Você recebeu o tempo em horas e precisa retornar o número de litros que Nathan tomou, arredondado.
+def litros_agua(horas: float) -> int:
+    litros_hora = 0.5
+
+    litros = int(horas * litros_hora)
+    return litros
+
+
+if __name__ == "__main__":
+    print(litros_agua(3))  # 1
+    print(litros_agua(6.7))  # 3
+    print(litros_agua(11.8))  # 5
+    print(litros_agua(15))  # 7
+
+
+# ex166: Crie uma função que converta nomes em inicias separados por pontos. Exemplo: Albert Einstein -> A.E
+def acronimo_nome(nome: str):
+    iniciais = []
+
+    for inicial in nome.split():
+        iniciais.append(inicial[0])
+
+    return ".".join(iniciais)
+
+
+if __name__ == "__main__":
+    print(acronimo_nome("Albert Einstein"))  # A.E
+    print(acronimo_nome("Isaac Newton"))  # I.N
+    print(acronimo_nome("Leonardo Da Vinci"))  # L.D.V
+
+
+# ex167: Crie uma função que recebe uma string como parâmetro e retorne
+def remove_espacos(string: str):
+    string = string.replace(" ", "")
+
+    return string
+
+
+if __name__ == "__main__":
+    print(remove_espacos("html é uma linguagem de marcação de hipertexto."))  # htmléumalinguagemdemarcaçãodehipertexto.
+    print(remove_espacos("brave é um ótimo navegador para segurança."))  # braveéumótimonavegadorparasegurança.
+
+
+# ex168: Dois amigos desejam trocar informações entre si num chat de bots. Os amigos querem conversar sobre hacking, e os bots filtram qualquer tipo de palavra inadequada e relacionada a hacking. Sabendo disso, os dois amigos criaram algumas substituições. A = 4; I = 1;E = 3;S = 5; O = 0.
+# Crie uma função que receba uma string como parâmetro e retorne a string com as substituições.
+# Atenção: APENAS PARA FINS DIDÁTICOS.
+def substituir_caracteres(string: str) -> str:
+    string = string.lower()
+    string = string.replace("a", "4")
+    string = string.replace("i", "1")
+    string = string.replace("e", "3")
+    string = string.replace("s", "5")
+    string = string.replace("o", "0")
+
+    return string
+
+if __name__ == "__main__":
+    print(substituir_caracteres("Que tal fazer um DDoS?"))  # qu3 t4l f4z3r um dd05?
+    print(substituir_caracteres("Obaa! Aprendi SQL INJECTION!"))  # 0b44! 4pr3nd1 5ql 1nj3ct10n!
+    print(substituir_caracteres("Instalei mais de 500 malwares nas vítimas!"))  # 1n5t4l31 m415 d3 500 m4lw4r35 n45 vít1m45!
+
+
+# ex169: Crie uma função que recebe um número inteiro como parâmetro e retorne o fatorial deste número.
+def fatorial(numero_usuario: int) -> int:
+    if numero_usuario <= 1:
+        return "O número deve ser maior que 1."
+
+    fatorial = 1
+
+    for numero in range(1, numero_usuario+1):
+        fatorial *= numero
+
+    return fatorial
+
+
+if __name__ == "__main__":
+    print(fatorial(5))  # 120
+    print(fatorial(4))  # 24
+    print(fatorial(6))  # 720
+    print(fatorial(7))  # 5040
+    print(fatorial(1))  # O número deve ser maior que 1.
+
